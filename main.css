@@ -1,0 +1,596 @@
+/* Rutherford Labbe: 12-10-2023 */
+
+/* Import font styles from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton&family=Kablammo&family=Lato:ital,wght@1,300&family=Linefont:wght@300&family=Noto+Color+Emoji&family=Noto+Sans+Glagolitic&family=Roboto:wght@700&display=swap");
+
+/* -------------------------------------------------- Section Divider ----------------------------------------------------- */
+
+/* Affects the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Sets colors */
+:root{
+    --Bunting: #141E46;
+    --Sazerac: #fff5e0;
+    --Bittersweet: #FF6969;
+    --Tall-Pappy: #BB2525;
+    --Spice: #6b442e;
+    --Congress-Blue: #04458e;
+    --Eastern-Blue: #2596be;
+    --Malibu: #87c0ff;
+    --Jade: #00BF63;
+}
+
+html{
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    /* Hides ScIE and Edge */
+    -ms-overflow-style: none; 
+
+     /* Firefox */
+    scrollbar-width: none;  
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: var(--Bunting);
+}
+
+/* -------------------------------------------------- Section Divider ----------------------------------------------------- */
+
+#background{
+    /* Centers element vertically and horizontally */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Set the dimensions of the video */
+    width: 100vw;
+    height: 85vh;
+    outline: 7px solid whitesmoke;
+
+    /* Sets layer */
+    z-index: 0;
+}
+
+.mountain{
+    /* Fill in the dimension of the parent element */
+    width: 100%;
+    height: 100%;
+
+    /* Image proportion remains the same */
+    object-fit: cover;
+}
+
+/* -------------------------------------------------- Section Divider ------------------------------------------------------- */
+
+#icon_box{
+    /* Centers element vertically and horizontally */
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Sets dimensions */
+    width: 60%;
+    height: 45%;
+
+    /* Sets text colors */
+    color: white;
+
+    background-color: var(--Congress-Blue);
+    border-radius: 20px;
+
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.my_name{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+.icon_container{
+    /* 1 row 4 columns grid */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Sets dimensions */
+    width: 87%;
+    height: fit-content;
+
+    /* Centers child element */
+    justify-items: center;
+
+    /* Align element vertically */
+    margin: 0 auto;
+
+    /*background-color: bisque;*/
+}
+
+.icon_wrapper{
+    font-size: 10em;
+    /*background-color: aqua;*/
+}
+
+.icon_wrapper a:link {
+    color: white;
+  }
+
+.icon_wrapper a:visited {
+    color: white;
+  }
+
+.icon_wrapper a:hover {
+    color: var(--Eastern-Blue);
+}
+
+.icon_link{
+    font-size: 0;
+}
+
+
+.platform_name{
+    margin-top: -15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* -------------------------------------------------- Section Divider ----------------------------------------------------- */
+
+#nav_one{
+    /* Centers element vertically and horizontally */
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: aliceblue;
+
+    border-radius: 30px;
+
+    /* Sets the background width of the text */
+    width: 30%;
+
+    /* Centers child elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Hides text node of hyperlink */
+#nav_one a{
+    font-size: 0;
+}
+
+#nav_one a:hover {
+    background-color: var(--Jade);
+}
+
+#nav_one a{
+    display: inline-block;
+
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+
+    border: 5px solid white;
+}
+
+/* -------------------------------------------------- Section Divider ----------------------------------------------------- */
+
+.content_wrapper{
+    /* 1 row - 3 columns grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    /* Centers elements */
+    place-items: center;
+    align-items: center;
+    height: 80vh;
+
+    /* Stretch width to fit content */
+    width: fit-content;
+}
+
+header,
+article,
+footer{
+    /* Sets dimensions */
+    width: 100vw;
+    height: 55vh;
+
+    /* Space between sections */
+    margin: 1px;
+    z-index: 1;
+}
+
+.content_home{
+    /* Centers element vertically and horizontally */
+    position: relative;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 1 row - 3 columns grid */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 27px;
+
+    /* Sets width dimension */
+    width: fit-content;
+
+    border-radius: 20px;
+    padding: 0 30px;
+
+
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.profile{
+    /* Sets dimensions */
+    width: 12em;
+    height: 12em;
+
+    border: 7px solid var(--Congress-Blue);
+    border-radius: 50%;
+}
+
+/* Hides text node of hyperlink */
+.profile div{
+    font-size: 0;
+}
+
+.introduction{
+    /* Sets dimensions */
+    width: 30em;
+    height: 12em;
+
+    background: white;
+    border-radius: 30px;
+    border: 5px solid var(--Congress-Blue);
+    
+}
+
+.introduction p{
+    /* Centers element vertically and horizontally */
+    position: relative;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: justify;
+    font-size: 1.6em;
+    padding: 30px;
+    color: var(--Congress-Blue);
+}
+
+/* -------------------------------------------------- Section Divider ------------------------------------------------------- */
+
+#nav_two{
+    /* Centers element vertically and horizontally */
+    position: relative;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 1.4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+#nav_two div{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 5px solid var(--Congress-Blue);
+
+    color: var(--Congress-Blue);
+    background-color: white;
+}
+
+#nav_two div:hover{
+    background-color: var(--Malibu);
+}
+
+/* -------------------------------------------------- Section Divider ------------------------------------------------------- */
+
+.content_project{
+    /* Centers element vertically and horizontally */
+    position: relative;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Align element horizontally */
+    display: flex;
+    flex-direction: row;
+
+    /* Keeps child element position centrally */
+    width: fit-content;
+
+    /*background-color: rgba(255, 255, 255, 0.555);*/
+    border-right: 5px solid var(--Congress-Blue);
+    border-left: 5px solid var(--Congress-Blue);
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+#project_img{
+    /* Centers element vertically and horizontally */
+    display: grid;
+    justify-content: center;
+    place-items: center;
+
+    /* Adds scrolling ability */
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.img_item{
+    /* Sets dimensions */
+    width: 35vw;
+    height: 40vh;
+
+    /* Justify child element to the right */
+    display: flex;
+    justify-content: right;
+
+    /* Keeps p element within each parent element */
+    position: relative;
+
+    margin: 26px;
+    border-radius: 19px;
+
+    border: 5px solid var(--Congress-Blue);
+}
+
+.img_item p{
+    /* Centers element vertically and horizontally */
+    position: absolute;
+    top: 13.5%; 
+    left: 89.5%; 
+    transform: translate(-50%, -50%);
+
+    /* Sets color */
+    color: var(--Congress-Blue);
+    font-size: 3em;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img_item h1{
+    /* Centers element vertically and horizontally */
+    position: absolute;
+    top: 47%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    font-size: 3.5em;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: var(--Congress-Blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 47%;
+}
+
+.img_item:hover{
+    background-color: var(--Malibu);
+    cursor: pointer;
+}
+
+.img_item img{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.profile img{
+    /* Fill in the dimension of the parent element */
+    width: 100%;
+    height: 100%;
+
+    /* Image proportion remains the same */
+    object-fit: cover;
+
+    /* Creates a circle */
+    border-radius: 50%;
+}
+
+.project_list{
+    /* Sets dimensions */
+    width: 16vw;
+    height: 47vh;
+
+    /* Adds left padding */
+    padding-left: 40px;
+}
+
+#project_img{
+    /* Sets dimensions */
+    width: 47vw;
+    height: 47vh;
+}
+
+/* -------------------------------------------------- Section Divider ------------------------------------------------------- */
+
+.content_link{
+    /* Centers element vertically and horizontally */
+    position: relative;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 1 row 2 columns grid */
+    display: grid;
+    grid-template-rows: 20% 80%;
+
+    /* Keeps child element position centrally */
+    width: fit-content;
+
+    /* Sets padding dimensions - top & right & bottom & left */
+    padding: 10px 50px 34px 50px;
+
+    /* Border styling effect */
+    border-right: 5px solid var(--Congress-Blue);
+    border-left: 5px solid var(--Congress-Blue);
+
+    /* Adds border radius */
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+.text_social{
+    /* Sets padding dimensions - top & right & bottom & left */
+    padding: 15px 15px 5px 15px;
+    font-size: 2em;
+    text-align: center;
+    color: var(--Congress-Blue);
+}
+
+#social_link{
+    /* Align elements horizontally */
+    display: flex;
+    flex-direction: row;
+
+    /* Center elements */
+    justify-content: center;
+    align-items: center;
+
+    color: var(--Congress-Blue);
+}
+
+.icon{
+    /* Set icon size */
+    font-size: 10em;
+
+    margin: 0 5px;
+    padding: 0 20px;
+}
+
+/* Hides text node of hyperlink */
+.icon_text{
+    display: none;
+}
+
+.icon_name{
+    /* Reduce top margin */
+    margin-top: -37px;
+
+    /* Align text at the center */
+    text-align: center;
+    
+    /* Sets the font size */
+    font-size: 27px;
+
+    /* Adds top padding */
+    padding-top: 20px;
+}
+
+a:link {
+    color: var(--Congress-Blue);
+  }
+
+a:visited {
+    color: var(--Congress-Blue);
+  }
+
+a:hover {
+    color: var(--Malibu);
+  }
+
+/* -------------------------------------------------- Section Divider ------------------------------------------------------- */
+
+
+
+@media screen and (min-width: 360px){
+    .content_wrapper{
+        display: none;
+    }
+
+    #icon_box{
+        display: block;
+    }
+
+    .my_name{
+        font-size: 4vw;
+    }
+
+    .icon_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        height: 70%;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 670px){
+
+    .icon_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        height: 62%;
+    }
+}
+
+@media screen and (min-width: 960px){
+
+    .my_name{
+        font-size: 3vw;
+    }
+
+    .icon_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 1320px){
+    .my_name{
+        font-size: 2.5vw;
+    }
+
+    .icon_container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1330px){
+    .content_wrapper{
+       display: flex;
+    }
+
+    #icon_box{
+        display: none;
+    }
+}
+
+
+
+  
