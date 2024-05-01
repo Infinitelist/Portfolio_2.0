@@ -141,7 +141,6 @@ body{
     font-size: 0;
 }
 
-
 .platform_name{
     margin-top: -15px;
     text-align: center;
@@ -378,7 +377,7 @@ footer{
 .img_item h1{
     /* Centers element vertically and horizontally */
     position: absolute;
-    top: 47%; 
+    top: 44%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 
@@ -408,8 +407,18 @@ footer{
 
     width: 85%;
     margin: auto;
+}
 
-    /*background-color: #00BF63;*/
+.img_item h5{
+    /* Centers element vertically and horizontally */
+    position: absolute;
+    top: 62%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    color: var(--Congress-Blue);
 }
 
 .description{
@@ -432,7 +441,6 @@ footer{
     z-index: -1;
 }
 
-
 .profile img{
     /* Fill in the dimension of the parent element */
     width: 100%;
@@ -443,6 +451,11 @@ footer{
 
     /* Creates a circle */
     border-radius: 50%;
+}
+
+.profile p{
+    text-align: center;
+    /*background-color: #00BF63;*/
 }
 
 .project_list{
@@ -477,8 +490,6 @@ footer{
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
-
 
 /* -------------------------------------------------- Section Divider ------------------------------------------------------- */
 
@@ -569,7 +580,6 @@ a:hover {
   }
 
 /* -------------------------------------------------- Section Divider ------------------------------------------------------- */
-
 
 @media screen and (min-width: 360px){
     .content_wrapper{
